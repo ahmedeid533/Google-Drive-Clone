@@ -20,7 +20,7 @@ const LeftSidebar = () => {
 	}, []);
 	return (
 		<div className="flex flex-col items-center min-w-[256px]">
-			<div className='flex flex-row items-center gap-[12px] mt-[7px] mr-[124px] pl-[16px] pr-[20px] py-[16px] rounded-2xl transition-all bg-[#37393b] hover:bg-[#494d53]'>
+			<div className='flex flex-row items-center cursor-pointer gap-[12px] mt-[7px] mr-[124px] pl-[16px] pr-[20px] py-[16px] rounded-2xl transition-all bg-[#37393b] hover:bg-[#494d53]'>
 				<img src={add} alt='add' className='w-[24px]' />
 				<div className='text-[14px]'>New</div>
 			</div>
