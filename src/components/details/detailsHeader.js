@@ -10,6 +10,8 @@ const DetailsHeader = () => {
 		$('#details').addClass('hidden');
 		$('#info').removeClass('bg-[#004A77]');
 		$('#info').addClass('hover:bg-[#3c4043]');
+		$('#gridWidth').removeClass('sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5')
+		$('#gridWidth').addClass('sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6')
 	}
 	return (
 		<div className='flex flex-row items-center p-[16px]'>

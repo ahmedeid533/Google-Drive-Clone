@@ -7,7 +7,7 @@ import list from '../../assets/icons/list.svg';
 import grid from '../../assets/icons/grid_view.svg';
 import info from '../../assets/icons/info.svg';
 const ChangeLayoutSection = () => {
-	const [listLayout, setListLayout] = useState(true);
+	const [listLayout, setListLayout] = useState(false);
 	const [details, setDetails] = useState(true);
 
 	const handleClick = (e) => {
@@ -26,9 +26,9 @@ const ChangeLayoutSection = () => {
 		$('.record').addClass('hover:bg-[#2b2b2b]');
 	}, [listLayout]);
 	useEffect(() => {
-		if (details) {
+		if ($('#details').hasClass('hidden')) {
 			$('#gridWidth').removeClass('sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5')
-		$('#gridWidth').addClass('sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6')
+			$('#gridWidth').addClass('sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6')
 		} else {
 			$('#gridWidth').removeClass('sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6')
 			$('#gridWidth').addClass('sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5')
