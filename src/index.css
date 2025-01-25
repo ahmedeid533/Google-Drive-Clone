@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import './font.css';
+
+body {
+  margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+  font-family: 'Product Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1b1b1b;
+  color: #fff;
+}
+body::-webkit-scrollbar-button {
+	height: 0;
+	width: 0;
+}
+.scroll-custom::-webkit-scrollbar {
+  width: 10px;
+	z-index: 1;
+}
+.scroll-custom::-webkit-scrollbar-track {
+  background: #131314;    
+	border-radius: 20px;
+}
+.scroll-custom::-webkit-scrollbar-thumb {
+  background-color: #2b2b2b;    /* color of the scroll thumb */
+  border-radius: 20px; 
+}
+.scroll-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #3b3b3b;
+}
