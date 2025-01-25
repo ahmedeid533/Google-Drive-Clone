@@ -65,7 +65,7 @@ const RecordOfLayout = ({name, date, size, src}) => {
 				<div className='lg:block hidden w-full'>
 				{	
 					hovered && 
-					<div className='items-center xl:block hidden flex-row gap-[8px] p-[4px] rounded-full'>
+					<div className='items-center xl:flex hidden flex-row gap-[8px] p-[4px] rounded-full'>
 						<IconHoverList icon={person} content='Share' />
 						<IconHoverList icon={download} content='Download' />
 						<IconHoverList icon={rename} content='Rename' />
