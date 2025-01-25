@@ -10,7 +10,7 @@ import Details from './components/details';
 function App() {
 	useEffect(() => {
 		if ($('body').width() < 480) {
-			alert('This app is not responsive for mobile devices please use a desktop or laptop for better experience');
+			alert('This app is not compatible with mobile devices please use a desktop or laptop for better experience');
 		}
 	}, []);
   return (
