@@ -30,8 +30,10 @@ const SelectionSection = () => {
 			<div id='selectList' className='flex flex-row ml-[16px] gap-[2px] mt-[-4px]'>
 				<Select label={"Type"}/>
 				<Select label={"People"}/>
-				<Select label={"Modified"}/>
-				<Select label={"Source"}/>
+				<div className='md:flex hidden flex-row gap-[2px]'>
+					<Select label={"Modified"}/>
+					<Select label={"Source"}/>
+				</div>
 			</div>
 			<div id='selected' className='w-full hidden px-[20px] my-[4px]'>
 				<div className='bg-[#1b1b1b] flex items-center flex-row gap-[8px] p-[4px] rounded-full'>
@@ -39,12 +41,14 @@ const SelectionSection = () => {
 						<IconHover icon={close} content='clear all' />
 					</div>
 					<div className='mx-[4px] cursor-default'>1 selected</div>
-					<IconHover icon={person} content='Share' />
-					<IconHover icon={download} content='Download' />
-					<IconHover icon={driveFile} content='Move' />
-					<IconHover icon={trash} content='Delete' />
-					<IconHover icon={link} content='Copy link' />
-					<IconHover icon={dots} content='More actions' />
+					<div className='md:flex hidden flex-row gap-[4px]'>
+						<IconHover icon={person} content='Share' />
+						<IconHover icon={download} content='Download' />
+						<IconHover icon={driveFile} content='Move' />	
+						<IconHover icon={trash} content='Delete' />
+						<IconHover icon={link} content='Copy link' />
+						<IconHover icon={dots} content='More actions' />
+					</div>
 				</div>
 			</div>
 		</>
