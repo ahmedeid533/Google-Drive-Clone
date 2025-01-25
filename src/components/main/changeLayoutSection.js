@@ -24,6 +24,8 @@ const ChangeLayoutSection = () => {
 		$('.record').removeClass('!bg-[#004A77]');
 		$('.record').removeClass('bg-[#004A77]');
 		$('.record').addClass('hover:bg-[#2b2b2b]');
+		$('#selected').addClass('hidden');
+		$('#selectList').removeClass('hidden');
 	}, [listLayout]);
 	useEffect(() => {
 		if ($('#details').hasClass('hidden')) {
