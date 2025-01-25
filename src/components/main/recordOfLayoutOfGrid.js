@@ -3,6 +3,7 @@ import $ from 'jquery';
 import WhiteHover from '../global/whiteHover';
 import imageIcon from '../../assets/icons/imageIcon.svg';
 import dots from '../../assets/icons/more_vert.svg';
+import WhiteHoverDots from './whiteHoverDots';
 
 const RecordOfLayoutOfGrid = ({name, src, size, date}) => {
 
@@ -37,7 +38,9 @@ const RecordOfLayoutOfGrid = ({name, src, size, date}) => {
 						</WhiteHover>
 					</div>
 				</div>
-				<img src={dots} alt='star' className='w-[30px] p-[5px]' />
+				<WhiteHoverDots content='More actions'>
+					<img src={dots} alt='more actions' className='w-[32px] rounded-full my-[3px] hover:bg-[#cccccc22] p-[4px]' />
+				</WhiteHoverDots>
 			</div>
 			<img src={src} alt={name} className='w-full aspect-[1.2] object-cover object-top rounded-sm' />
 		</div>
