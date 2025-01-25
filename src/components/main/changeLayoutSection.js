@@ -67,7 +67,7 @@ const ChangeLayoutSection = () => {
 				<WhiteHover content='View Details'>
 					<div 
 						id='info'
-						className='p-[9px] rounded-full hover:bg-[#3c4043] relative translate-y-[-4px]  ml-[4px] mb-[4px] justify-center'
+						className='p-[9px] rounded-full hover:bg-[#3c4043] relative translate-y-[-2.5px] ml-[4px] justify-center'
 						onClick={(e)=>{handleClick(e.currentTarget)}}
 					>
 						<img src={info} alt='info' className='w-[22px]'/>
