@@ -7,7 +7,7 @@ import WhiteHover from '../global/whiteHover';
 const SearchBar = () => {
 	return (
     <div className='relative'>
-      <input type='text' placeholder='Search in Drive' className='bg-[#282a2c] w-[min(40vw,722px)] placeholder:text-[#d5d5d5] text-[17px] h-[48px] pl-[58px] font-medium rounded-full focus:outline-0 '/>
+      <input type='text' placeholder='Search in Drive' className='bg-[#282a2c] w-[min(35vw,722px)] placeholder:text-[#d5d5d5] text-[17px] h-[48px] pl-[58px] font-medium rounded-full focus:outline-0 '/>
       <div className='absolute top-[50%] left-[9px] transform translate-y-[-50%]'>
         <BlackHover content='Search'>
           <div className='hover:bg-[#3c3e40] rounded-full p-[8px]'>
