@@ -62,10 +62,10 @@ const RecordOfLayout = ({name, date, size, src}) => {
 			</WhiteHover>
 			</div>
 			<div className='xl:min-w-[192px] lg:min-w-[48px] flex flex-row items-center'>
-				<div className='xl:block lg:hidden w-full'>
+				<div className='lg:block hidden w-full'>
 				{	
 					hovered && 
-					<div className='flex items-center flex-row gap-[8px] p-[4px] rounded-full'>
+					<div className='items-center xl:block hidden flex-row gap-[8px] p-[4px] rounded-full'>
 						<IconHoverList icon={person} content='Share' />
 						<IconHoverList icon={download} content='Download' />
 						<IconHoverList icon={rename} content='Rename' />
