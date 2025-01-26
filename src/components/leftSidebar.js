@@ -27,11 +27,11 @@ const LeftSidebar = () => {
 			<div className='mt-[16px]'>
 				<Button icon={home} label='Home' />
 				<div className='relative'>
-					<svg className="absolute left-[5px] top-[50%] translate-y-[-50%]" width="14px" height="14px" viewBox="0 0 20 20" focusable="false" fill="currentColor"><polygon points="8,5 13,10 8,15"></polygon></svg>
+					<svg className="absolute left-[5px] top-[50%] transform translate-y-[-50%]" width="14px" height="14px" viewBox="0 0 20 20" focusable="false" fill="currentColor"><polygon points="8,5 13,10 8,15"></polygon></svg>
 					<ButtonClicked icon={hardDrive} label='My Drive' />
 				</div>
 				<div className='relative'>
-					<svg className="absolute left-[5px] top-[50%] translate-y-[-50%]" width="14px" height="14px" viewBox="0 0 20 20" focusable="false" fill="currentColor"><polygon points="8,5 13,10 8,15"></polygon></svg>
+					<svg className="absolute left-[5px] top-[50%] transform translate-y-[-50%]" width="14px" height="14px" viewBox="0 0 20 20" focusable="false" fill="currentColor"><polygon points="8,5 13,10 8,15"></polygon></svg>
 					<Button icon={devices} label='Computers' />
 				</div>
 			</div>
